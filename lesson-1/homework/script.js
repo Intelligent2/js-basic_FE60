@@ -3,6 +3,13 @@
     Вывести занчение и тип переменной в console.log
 */
 
+    let Name = 'Evgeniy';
+    console.log(Name);
+    let lastName = 'Vaikshinskyi';
+    console.log(lastName);
+    let age = 24;
+    console.log(age);
+
 /*
     Создать переменные a = 22 и b = 7. 
     Найти остаток от деления a на b, вывести в alert или console.log
@@ -10,6 +17,12 @@
     * Переменные присваиваются через prompt
 */
 
+    let a = 22;
+    let b = 7;
+    console.log(a % b);
+        a = prompt("Введите число");
+        b = prompt('Введите число');
+        alert("Остаток от деления " +  a % b);
 /*
     Создать переменные x и y с рандомными числами. 
     Найти остаток от деления x на y
@@ -18,16 +31,25 @@
     - использовать Math https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Math
 */
 
+    let x = Math.random();
+    let y = Math.random();
+    console.log(x % y == 0  ? 'Делится без остатка' : 'делится с остатком ' + "" + x % y);
+
 /*
     Создать переменную с результатом 10 в степени 10
     - использовать Math https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Math
 */
+
+    let root= Math.pow(10, 10);
+    console.log(root);
 
 /*
     Создать переменную которая хранит квадратный корень из 245
     - использовать Math https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Math
 */
 
+    let rootSquare = Math.sqrt(245);
+    console.log(rootSquare);
 /*
     Создать переменные e и f. 
     Отнять e от f, результат записать в g
@@ -37,6 +59,17 @@
     * Переменные присваиваются через prompt
 */
 
+    let e = 12;
+    let f = 22;
+    let g = e - f;
+        console.log(Math.abs(g));
+        e = prompt("Введите число");
+        f = prompt("Введите число");
+        g = e - f
+        alert(Math.abs(g))
+        
+
+
 /*
     Создать переменные c и d. 
     Найти найдите модуль разности c и d
@@ -44,6 +77,17 @@
 
     * Переменные присваиваются через prompt
 */
+
+    let c = 10;
+    let d = 15;
+    console.log(Math.abs(c - d));
+        c = prompt("Введите число");
+        d = prompt("Введите число");
+        alert("Модуль разницы c и d равна "  +    Math.abs(c - d));
+   
+
+
+
 
 /*
     Вывести окно prompt с вопросом о имени
@@ -55,6 +99,12 @@
     Результат снова вывести в alert или console.log
  */
 
+    Name = prompt("Ваше имя?");
+    lastName = prompt("Ваша фамилия?");
+    age = prompt("Ваш возраст?");
+    let str = "Меня зовут " + lastName + " " + Name + ", мне " + age + (age > 20 ? " год" : " лет");
+    alert(str)
+
 /*
     Создать обьект {name: '', lastName: '', age: null}
     Вывести окно prompt с вопросом о имени
@@ -63,8 +113,24 @@
     Создать переменную, которая содержит строку вида 'Меня зовут lastName name, мне age лет/год'
 */
 
+    let name = {
+        Name: prompt("Ваше имя?"),
+        lastName: prompt("Ваша Фамилия?"),
+        age: prompt("Ваш возраст?"),
+        str: "Меня зовут " + lastName + " " + Name + ", мне" + age + (age > 20 ? " год" : " лет")
+    }
+    
+
 /*
     Вывести окно prompt с вопросом о возрасте
     В зависимости от ответа вывести alert с текстом “поздравляем, вам X полных лет”
     Вывести окно alert с утверждением совершеннолетний пользователь или нет
 */
+
+    age = prompt("Ваш возраст?");
+    str = "поздравляем, вам " + age + " полных лет";
+    alert(str)
+    str = age > 18 ? "Вы совершеннолетний пользователь" : "Вы не совершеннолетний пользователь"
+    alert(str)
+
+
