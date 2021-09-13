@@ -3,12 +3,29 @@
     Вывести занчение и тип переменной в console.log
 */
 
-    let Name = 'Evgeniy';
-    console.log(Name);
-    let lastName = 'Vaikshinskyi';
-    console.log(lastName);
-    let age = 24;
-    console.log(age);
+    let number = 12456789;
+    console.log(typeof number + " " + number)
+    let bigInt = 123456789n;
+    console.log(typeof bigInt + " " + bigInt);
+    let string = "Hello JS";
+    console.log(typeof string + " " + string);
+    let boolean = true;
+    console.log(typeof boolean + " " + boolean);
+    let nul = null;
+    console.log(typeof null + " " + nul);
+    let und = undefined;
+    console.log(typeof undefined + " " + und);
+    let sym1 = Symbol();
+    console.log(typeof Symbol);
+    let obj = {
+        j : 7,
+        l : 12
+    }
+    console.log(obj)
+
+
+
+
 
 /*
     Создать переменные a = 22 и b = 7. 
@@ -99,9 +116,9 @@
     Результат снова вывести в alert или console.log
  */
 
-    Name = prompt("Ваше имя?");
-    lastName = prompt("Ваша фамилия?");
-    age = prompt("Ваш возраст?");
+    let Name = prompt("Ваше имя?");
+    let lastName = prompt("Ваша фамилия?");
+    let age = prompt("Ваш возраст?");
     let str = "Меня зовут " + lastName + " " + Name + ", мне " + age + (age > 20 ? " год" : " лет");
     alert(str)
 
@@ -127,10 +144,10 @@
     Вывести окно alert с утверждением совершеннолетний пользователь или нет
 */
 
-    age = prompt("Ваш возраст?");
-    str = "поздравляем, вам " + age + " полных лет";
-    alert(str)
-    str = age > 18 ? "Вы совершеннолетний пользователь" : "Вы не совершеннолетний пользователь"
-    alert(str)
+    let Age = prompt("Ваш возраст?");
+    let Str = "поздравляем, вам " + age + " полных лет";
+    alert(Str)
+    Str = age > 18 ? "Вы совершеннолетний пользователь" : "Вы не совершеннолетний пользователь"
+    alert(Str)
 
 
