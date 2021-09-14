@@ -8,7 +8,7 @@ let bInt = 100000000000000000000042627747242752244n;
 console.log(typeof bInt);
 let str = "string";
 console.log(typeof str);
-let tr = 10 > 1;
+let tr = true;
 console.log(typeof tr);
 let nu = null;
 console.log(typeof nu);
@@ -25,7 +25,7 @@ console.log(typeof obj);
 */
     let a =22;
     let b = 7;
-    a = a % b;
+    const res = a % b;
     console.log(a);
 /*
     * Переменные присваиваются через prompt
@@ -38,12 +38,8 @@ console.log(typeof obj);
 */
     let x = prompt('Переменная "x"');
     let y = prompt('Переменная "y"');
-    x = x % y;
-    if (x == 0) {
-        alert(`Делиться без остатка`);
-    } else if (x > 0) {
-        alert(`Делиться с остатком ${x}`);
-    }
+    const sol = x % y;
+    sol == 0 ? alert('Делится без остатка') : alert(`Делится с остатком ${sol}`);
     // Неразобрался как тут использовать Math...
 
 /*
