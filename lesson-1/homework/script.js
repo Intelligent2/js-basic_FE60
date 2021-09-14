@@ -15,8 +15,9 @@
     console.log(typeof null + " " + nul);
     let und = undefined;
     console.log(typeof undefined + " " + und);
-    let sym1 = Symbol();
-    console.log(typeof Symbol);
+    let sym = Symbol('sym');
+    console.log(sym);
+    console.log(typeof(sym));
     let obj = {
         j : 7,
         l : 12
