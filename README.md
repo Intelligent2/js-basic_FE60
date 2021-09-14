@@ -38,6 +38,9 @@ js-basic
     git branch  
     должно показывать, что мы на ветке tarasov
 
+    git push origin tarasov
+    публикуем ветку в удаленный репозиторий
+
     git checkout -b tarasov-lesson-1  
     создаём ветку где выполняем домашнее задание для lesson-1
 
