@@ -44,13 +44,12 @@ console.log(c);
     - использовать Math https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Math
 */
 
-/*let x=Math.random();
-let y=Math.random();
-z=x%y;
-if (z>=1){Boolean(str1)=true};
-let str1="Делится без остатка";
-let str2=`Делится с остатком ${z}`;
-alert(str1&&str2);
+    let x=Math.random();
+    let y=Math.random();
+    z=x%y;
+    str1=`делится с остатком ${z} `;
+    str2="делится без остатка";
+    console.log (z>0 ? str1:str2);
 
 /*
     Создать переменную с результатом 10 в степени 10
@@ -139,10 +138,7 @@ alert (string);
     Вывести окно alert с утверждением совершеннолетний пользователь или нет
 */
 
-/*let age=prompt('Ваш возраст',18);
-let str1=`Поздравляем, вам ${age} полных лет`;
-let str2="Вы несовершеннолетний";
-if (age>=18){
-    alert(str1)};
-if (age<18){
-    alert(str2)};*/
+let age=prompt('Ваш возраст',18);
+str1=`поздравляем, вам полных ${age} лет `;
+str2="вы несовершеннолетний";
+alert (age<18 ? str2:str1);
