@@ -168,6 +168,13 @@ console.log(Object.values(user)) // ['Vlad', 'Tarasov', '28', '{ city: 'Minsk', 
 
     nums[1] = 999
     console.log(nums) // [1,999,3,4,5]
+
+    const nums2 = nums
+    nums.push(6)
+    nums2.push(7)
+
+    console.log(nums) // [1,999,3,4,5,6,7]
+    console.log(nums2) // [1,999,3,4,5,6,7]
   ```
 
 - Свойство **.length** возвращает длинну массива 
