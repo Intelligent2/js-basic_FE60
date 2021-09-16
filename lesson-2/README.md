@@ -343,3 +343,16 @@ console.log(Object.values(user)) // ['Vlad', 'Tarasov', '28', '{ city: 'Minsk', 
     console.log(string.endsWith('string')) // true
     console.log(string.endsWith('stRiNg')) // false
  ```
+
+***
+  ### ДЗ
+
+1. [Условия if else](https://learn.javascript.ru/ifelse)
+2. [Условия switch case](https://learn.javascript.ru/switch)
+3. [Циклы (while, do … while, for](https://learn.javascript.ru/while-for)
+4. [Подробнее об объетах](https://learn.javascript.ru/object)
+5. [Подробнее о строках](https://learn.javascript.ru/string)
+6. [Подробнее о массивах](https://learn.javascript.ru/array)
+
+
+[Практика](homework/script.js)
