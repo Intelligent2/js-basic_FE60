@@ -1,7 +1,3 @@
-const nums = [1, 2, 087, 7, 9];
-nums.pop();
-nums.pop();
-console.log(num, num1);
 /*
     1)
     Создайте цикл от 0 до 10
@@ -50,3 +46,31 @@ console.log(num, num1);
     Дан массив [1,2,3,1,2,3,5,4,6,7,3,2,1,2,3,5,3,3,1,2,3,4,1]
     Создать массив из элементов которые встречаются только один раз
 */
+
+// const arr = [];
+
+// while (arr.length < 10) {
+//   const randomNum = Math.floor(Math.random() * 100);
+
+//   if (arr.includes(randomNum)) {
+//     continue;
+//   }
+
+//   arr.push(randomNum);
+// }
+
+// console.log(arr);
+
+// const string = "sOMe sTrING in lOWERcaSE";
+// let string1 = ""; // SoMe sTrInG In lOwErCaSe
+
+// for (let i = 0; i < string.length; i++) {
+//   //   string1 += i % 2 === 0 ? string[i].toUpperCase() : string[i].toLowerCase();
+//   if (i % 2 === 0) {
+//     string1 += string[i].toUpperCase(); // S, SoM 
+//   } else {
+//     string1 += string[i].toLowerCase(); // So, SoMe 
+//   }
+// }
+
+// console.log(string1);
