@@ -1,3 +1,7 @@
+const nums = [1, 2, 087, 7, 9];
+nums.pop();
+nums.pop();
+console.log(num, num1);
 /*
     1)
     Создайте цикл от 0 до 10
@@ -8,6 +12,31 @@
     Найдите сумму между этими итерируемыми числами
     Найдите произведение между итерируемыми числами
 */
+
+// for (let i = 0; i <= 10; i++) {
+//   if (i % 2 === 0) {
+//     console.log(i);
+//   }
+
+//   if (i % 2 !== 0) {
+//     continue;
+//   }
+//   console.log(i);
+// }
+
+// let sum = 0;
+// let multi = 1;
+
+// for (let i = 0; i <= 10; i++) {
+//   sum += i;
+
+//   if (i > 0) {
+//     multi *= i;
+//   }
+// }
+
+// console.log(sum);
+// console.log(multi);
 
 /*
     1)
