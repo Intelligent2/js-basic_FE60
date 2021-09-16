@@ -60,7 +60,7 @@ js-basic
     нет замечаний
         на github в своём pull request нажимаем на кнопку Merge pull request
     
-    git branch -d tarasov-lesson-1
+    git branch -D tarasov-lesson-1
     удаляем ветку tarasov-lesson-1 локально
 
     git push origin --delete tarasov-lesson-1
