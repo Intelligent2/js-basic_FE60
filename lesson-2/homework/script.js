@@ -4,10 +4,16 @@
     Найти произведение чисел
 */
 
-const nums1 = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+// const nums1 = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
 
-let sum;
-let multi;
+// let sum = 0;
+// let multi = 0;
+// for (let i=0; i<nums1.length-1;i++){
+// sum += nums1[i];
+// multi *= nums1[i];
+// }
+// alert(sum);
+// alert(multi);
 // code
 
 /*
@@ -15,10 +21,22 @@ let multi;
     Заполнить массив even чётными числами, odd нечётными
 */
 
-const nums2 = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+// const nums2 = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
 
-const even = [];
-const odd = [];
+// const even = [];
+// const odd = [];
+
+// while (nums2.length > 0) {
+//   let i = nums2.shift()
+//   if (i%2===0) {
+//     even.push(i)
+//   }else{
+//     odd.push(i);
+//   }
+// }
+//   console.log(odd);
+//   console.log(even);
+
 //code
 
 /*
@@ -28,8 +46,24 @@ const odd = [];
 
 const nums3 = [578, 894, 982, 78, 1223, 353, 123, 544, 429, 5423, 1914, 120];
 
-let max;
-let min;
+// let max = 0;
+// let min = 0;
+
+// let max = nums3[0];
+// for (let g = 1; g < nums3.length; g++) {
+// 	if (max < nums3[g]) {
+// 		max = nums3[g];
+// 	}
+// }
+// alert(max);
+// let min = nums3[0];
+// for (let g = 1; g < nums3.length; g++) {
+// 	if (min > nums3[g]) {
+// 		min = nums3[g];
+// 	}
+// }
+// alert(min);
+
 // code
 
 /*
@@ -41,25 +75,38 @@ let min;
 */
 
 const users = [
-  {
-    id: 1,
-    name: "Leanne Graham",
-    username: "Bret",
-    email: "Sincere@april.biz",
-  },
-  {
-    id: 2,
-    name: "Ervin Howell",
-    username: "Antonette",
-    email: "Shanna@melissa.tv",
-  },
-  {
-    id: 3,
-    name: "Clementine Bauch",
-    username: "Samantha",
-    email: "Nathan@yesenia.net",
-  },
+	{
+		id: 1,
+		name: 'Leanne Graham',
+		username: 'Bret',
+		email: 'Sincere@april.biz',
+	},
+	{
+		id: 2,
+		name: 'Ervin Howell',
+		username: 'Antonette',
+		email: 'Shanna@melissa.tv',
+	},
+	{
+		id: 3,
+		name: 'Clementine Bauch',
+		username: 'Samantha',
+		email: 'Nathan@yesenia.net',
+	},
 ];
+
+let NAME = prompt('Введите имя');
+NAME = NAME.toLowerCase();
+
+for (let i = 0; i < users.length; i++) {
+	if (users[i].name.toLowerCase() === NAME) {
+		console.log(`user name: ${users[i].username}, user email: ${users[i].email}`);
+		break;
+	}
+	if (i === users.length - 1) {
+		console.log('Совпадений не найдено');
+	}
+}
 
 /*
     Дан объект {a: 1, b: 2, c: 3, d: 4, e: 5, f: 6}
@@ -71,19 +118,31 @@ const users = [
 */
 
 const obj = {
-  a: 1,
-  b: 2,
-  c: 3,
-  d: 4,
-  e: 5,
-  f: 6,
+	a: 1,
+	b: 2,
+	c: 3,
+	d: 4,
+	e: 5,
+	f: 6,
 };
 
 const keys = [];
-// code
-
 const values = [];
-// code
-
 const entries = [];
+//code
+// for (const propName in obj){
+//   keys.push(obj[propName]);
+// }
+// console.log (keys)
+
+// for (const propName in obj){
+//   values.push(propName);
+// }
+// console.log (values)
+
+// for (const propName in obj){
+//   entries.push(obj[propName], propName)
+// }
+// console.log (entries)
+
 // code
