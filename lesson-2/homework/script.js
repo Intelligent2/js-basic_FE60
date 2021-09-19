@@ -55,11 +55,12 @@ let max= nums3[0];
 let min= nums3[0];
 for (i=0;i<nums3.length;i++) {
   if (nums3[i]>max){
-    max=nums3[i]} }
+    max=nums3[i]}
+   }
   console.log('самое большое число в массиве', max);
   for (i=0;i<nums3.length;i++) {
   if (nums3[i]<min) {
-      min=nums3[i]}
+    min=nums3[i]}
   }
   console.log('самое маленькое число в массиве', min);
 
@@ -115,19 +116,20 @@ const obj = {
   f: 6,
 };
 
-const keys = [0];
-for (const keys in obj){
-  console.log(Object.keys(obj))
-  break
-};
-const values = [0];
-for (const values in obj){
-  console.log(Object.values(obj))
-  break
-};
-const entries = [0];
-for (const entries in obj){
-  console.log(Object.entries(obj))
-  break
-};
-15
+const keys = [];
+for (const key in obj){
+  keys.push(key);
+}
+console.log("Массив с ключами обьекта -",keys);
+
+const values = [];
+for (const key in obj){
+  values.push(obj[key]);
+}
+console.log("Массив со значениями обьекта -",values);
+
+const entries = [];
+for (const key in obj){
+  entries.push([key,obj[key]]);
+}
+console.log("Массив с содержимым обьекта -",entries);
