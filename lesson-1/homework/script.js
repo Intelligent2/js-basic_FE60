@@ -135,10 +135,10 @@
     //     lastName: '',
     //     age: null
     // }
-    // let nameInfo = prompt("Какое имя?", "name");
-    // let lastNameInfo = prompt("Какова фамилия?", "lastName");
-    // let ageInfo = prompt("Каков возраст?", "age");
-    // let info = `Меня зовут ${lastNameInfo} ${nameInfo}, мне ${ageInfo} лет/год`;
+    // obj.name = prompt("Какое имя?", "name");
+    // obj.lastName = prompt("Какова фамилия?", "lastName");
+    // obj.age = prompt("Каков возраст?", "age");
+    // let info = `Меня зовут ${obj.lastName} ${obj.name}, мне ${obj.age} лет/год`;
     // alert(info);
     
 
