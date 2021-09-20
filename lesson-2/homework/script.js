@@ -21,10 +21,23 @@
     Заполнить массив even чётными числами, odd нечётными
 */
 
-// const nums2 = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+const nums2 = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
 
-// const even = [];
-// const odd = [];
+const even = [];
+const odd = [];
+
+// for (let i=0;i<nums2.length;i++){
+//   let g = nums2[i];
+//     if (g%2===0) {
+//       even.push(i);
+//     }else{
+//       odd.push(i);
+//     }
+//   }
+//   console.log(odd);
+//   console.log(even);
+//   console.log(nums2)
+
 
 // while (nums2.length > 0) {
 //   let i = nums2.shift()
@@ -95,18 +108,18 @@ const users = [
 	},
 ];
 
-let NAME = prompt('Введите имя');
-NAME = NAME.toLowerCase();
+// let NAME = prompt('Введите имя');
+// NAME = NAME.toLowerCase();
 
-for (let i = 0; i < users.length; i++) {
-	if (users[i].name.toLowerCase() === NAME) {
-		console.log(`user name: ${users[i].username}, user email: ${users[i].email}`);
-		break;
-	}
-	if (i === users.length - 1) {
-		console.log('Совпадений не найдено');
-	}
-}
+// for (let i = 0; i < users.length; i++) {
+// 	if (users[i].name.toLowerCase() === NAME) {
+// 		console.log(`user name: ${users[i].username}, user email: ${users[i].email}`);
+// 		break;
+// 	}
+// 	if (i === users.length - 1) {
+// 		console.log('Совпадений не найдено');
+// 	}
+// }
 
 /*
     Дан объект {a: 1, b: 2, c: 3, d: 4, e: 5, f: 6}
@@ -130,19 +143,19 @@ const keys = [];
 const values = [];
 const entries = [];
 //code
-// for (const propName in obj){
-//   keys.push(obj[propName]);
-// }
-// console.log (keys)
+for (const propName in obj){
+  keys.push(propName);
+}
+console.log (keys)
 
-// for (const propName in obj){
-//   values.push(propName);
-// }
-// console.log (values)
+for (const propName in obj){
+  values.push(obj[propName]);
+}
+console.log (values)
 
-// for (const propName in obj){
-//   entries.push(obj[propName], propName)
-// }
-// console.log (entries)
+for (const propName in obj){
+  entries.push([propName,obj[propName]])
+}
+console.log (entries)
 
 // code
