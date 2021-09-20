@@ -24,7 +24,7 @@ const nums2 = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
 const even = [];
 const odd = [];
 // for (let i = 0; i < nums2.length; i++ ) {
-//   if ( nums2[i]%2 ) { //how this part works?
+//   if ( nums2[i]%2 ) {
 //     odd.push(nums2[i])
 //   } else {
 //     even.push(nums2[i])
