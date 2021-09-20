@@ -9,7 +9,6 @@
     Найдите произведение между итерируемыми числами
 */
 
-<<<<<<< HEAD
 //// 1
 for (let i = 0; i <= 10; i++) {
   if (i % 2 === 0) {
@@ -36,7 +35,6 @@ for (let i = 0; i <= 10; i++) {
 
 console.log(sum);
 console.log(multi);
-=======
 // for(let i = 0; i <= 10; i += 2){  
 //     console.log(i)
 // }
@@ -64,7 +62,6 @@ console.log(multi);
 // }
 // console.log(sum);
 // console.log(multi);
->>>>>>> 9e1e4a21b77b537d9ff5e5926646fec713d3ad6c
 
 /*
     1)
@@ -78,7 +75,6 @@ console.log(multi);
     Дан массив [1,2,3,1,2,3,5,4,6,7,3,2,1,2,3,5,3,3,1,2,3,4,1]
     Создать массив из элементов которые встречаются только один раз
 */
-<<<<<<< HEAD
 
 //// 1
 const arr = [];
@@ -126,7 +122,6 @@ for (let i = 0; i < someArr.length; i++) {
 }
 
 console.log(uniqNumbers);
-=======
     // const arr = [];
     // while(arr.length < 10) {
     //     const a = Math.floor(Math.random() * 100);
@@ -154,4 +149,3 @@ console.log(uniqNumbers);
 // console.log(string1);
 
 const arr = [1,2,3,1,2,3,5,4,6,7,3,2,1,2,3,5,3,3,1,2,3,4,1];
->>>>>>> 9e1e4a21b77b537d9ff5e5926646fec713d3ad6c
