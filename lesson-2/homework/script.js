@@ -38,8 +38,16 @@ const odd = [];
 
 const nums3 = [578, 894, 982, 78, 1223, 353, 123, 544, 429, 5423, 1914, 120];
 
-// let max = Math.max.apply(Math, nums3);
-// let min = Math.min.apply(Math, nums3);
+// let max = nums3[0];
+// let min = nums3[0];
+// for (let i = 1; i < nums3.length; i++) {
+//   if (nums3[i] > max) {
+//     max = nums3[i];
+//   } else if (nums3[i] < min) {
+//     min = nums3[i]
+//   }
+// }
+
 /*
     Дан обьект users
     В  окно prompt необходимо ввести имя пользователя
