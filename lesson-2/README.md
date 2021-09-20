@@ -228,7 +228,7 @@ console.log(Object.values(user)) // ['Vlad', 'Tarasov', '28', '{ city: 'Minsk', 
     console.log(nums) // [1,2,3,4,5,6,7,8,9]
  ```
 
- - Методы **.unshit(elem, ...elemX)/shift()**. **.unshit(elem, ...elemX)** добоавляет элменты в начало массива, **.shift()** удаляет элемент первый элемент
+ - Методы **.unshift(elem, ...elemX)/shift()**. **.unshift(elem, ...elemX)** добоавляет элменты в начало массива, **.shift()** удаляет элемент первый элемент
 
 ```js
     const nums = [5,6,7,8,9,10]

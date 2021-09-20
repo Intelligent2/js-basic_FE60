@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # System files
 .DS_Store
 Thumbs.db
@@ -13,3 +14,11 @@ node_modules/
 npm-debug.log*
 build/
 package-lock.json
+=======
+# misc
+.DS_Store
+
+#IDEA
+.idea
+.vscode
+>>>>>>> master
