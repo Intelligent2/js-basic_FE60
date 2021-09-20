@@ -4,12 +4,29 @@
     Функция должна уметь работать с разным количетвом параметров
 */
 
+const getBiggest = (...nums) => {
+  let max = -Infinity;
+
+  for (let i = 0; i < nums.length; i++) {
+    if (nums[i] > max) {
+      max = nums[i];
+    }
+  }
+
+  return max;
+};
+
 /*
     Создать функцию с именем duplicate
     Функция должна принимать массив
     Функция должна возратить удвоенный массив
     Пример: [1,2,3] => [1,2,3,1,2,3] 
 */
+
+const duplicate = (array) => {
+  array.push(...array);
+  return array;
+};
 
 /*
     Создать функцию с именем isPalindrome
