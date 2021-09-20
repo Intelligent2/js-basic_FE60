@@ -1,0 +1,15 @@
+# System files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.idea
+*.sublime*
+.vscode
+
+# Project files
+*.log*
+node_modules/
+npm-debug.log*
+build/
+package-lock.json
