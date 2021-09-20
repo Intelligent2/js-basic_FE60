@@ -1,16 +1,20 @@
-function a() {
-    var a = 'a'
-    let b = 'b'
-    const c = 'c'
-}
-
-a();
-console.log(a)
 /*
     Создать функцию с именем getBiggest
     Функция должна возвращать самое большое число из переданных параметров
     Функция должна уметь работать с разным количетвом параметров
 */
+
+const getBiggest = (...nums) => {
+  let max = -Infinity;
+
+  for (let i = 0; i < nums.length; i++) {
+    if (nums[i] > max) {
+      max = nums[i];
+    }
+  }
+
+  return max;
+};
 
 /*
     Создать функцию с именем duplicate
@@ -18,6 +22,11 @@ console.log(a)
     Функция должна возратить удвоенный массив
     Пример: [1,2,3] => [1,2,3,1,2,3] 
 */
+
+const duplicate = (array) => {
+  array.push(...array);
+  return array;
+};
 
 /*
     Создать функцию с именем isPalindrome
