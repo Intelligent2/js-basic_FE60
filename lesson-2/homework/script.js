@@ -29,9 +29,9 @@ const even = [];
 const odd = [];
 for(let i = 0; i < nums1.length; i++ ){
   if(i % 2 === 0) {
-    even.push(i)
+    even.push(nums2[i])
   }else if(i % 2 === 1) {
-    odd.push(i)
+    odd.push(nums2[i])
   }
 }
 console.log(even)
