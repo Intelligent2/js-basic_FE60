@@ -112,10 +112,16 @@ const obj = {
   f: 6,
 };
 
-const keys = Object.keys(obj);
-console.log(keys);
+const keys = [];
+for (let key of Object.keys(obj)) {
+  keys.push(key)
+}
+console.log(keys)
 
-const values = Object.values(obj);
+const values = [];
+for (let key in Object.values(obj)) {
+  values.push(key)
+}
 console.log(values);
 
 const entries = [];
