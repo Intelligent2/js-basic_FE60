@@ -9,9 +9,9 @@ const nums1 = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
 let sum = 0;
 let multi = 1;
 // code
-for (let i = 0; i <= 12; i++){
+for (let i = 0; i <= 12; i++) {
   sum += i;
-  if(i > 0){
+  if (i > 0) {
     multi *= i
   }
 };
@@ -29,15 +29,15 @@ const nums2 = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
 const even = [];
 const odd = [];
 //code
-for(let i = 0;i <= 12; i++){
-  if(i % 2 === 0){
-  even.push(i);
-  console.log(even);
-  }else{
+for (let i = 0; i < 12; i++) {
+  if (i % 2 === 0) {
+    even.push(i);
+  } else {
     odd.push(i);
-    console.log(odd);
   }
 };
+console.log(even);
+console.log(odd);
 
 
 /*
@@ -50,8 +50,15 @@ const nums3 = [578, 894, 982, 78, 1223, 353, 123, 544, 429, 5423, 1914, 120];
 let max;
 let min;
 // code
-max = Math.max(578, 894, 982, 78, 1223, 353, 123, 544, 429, 5423, 1914, 120);
-min = Math.min(578, 894, 982, 78, 1223, 353, 123, 544, 429, 5423, 1914, 120);
+min = Infinity;
+max = -Infinity;
+for (let i = 0; i < nums3.length; i++){
+  if(nums3[i] > max){
+    max = nums3[i];
+  } else if (nums3[i] < min){
+    min = nums3[i]
+  }
+}
 console.log(max);
 console.log(min);
 /*
@@ -82,10 +89,16 @@ const users = [
     email: "Nathan@yesenia.net",
   },
 ];
-// let qst = prompt('Enter your name');
-// for (qst in users){
-// console.log(qst);
-// }
+let person = prompt("Enter your name");
+person = person.toLowerCase()
+for(let i = 0;i < users.length;i++){
+  if(users[i].name.toLowerCase() === person){
+    console.log(`user name ${users[i].name}, user email: ${users[i].email}`)
+    break;
+  } else if (users[i].name.toLowerCase() !== person) {
+	console.log('name not found');
+  }
+}
 
 /*
     Дан объект {a: 1, b: 2, c: 3, d: 4, e: 5, f: 6}
@@ -106,10 +119,19 @@ const obj = {
 };
 
 const keys = [];
+const value = [];
 // code
-for(keys in obj);
+for (let key in obj){
+  keys.push(key);
+  value.push(obj[key]);
+};
 console.log(keys);
+console.log(value);
 // code
 
 const entries = [];
 // code
+for (let key in obj) {
+  entries.push(key, obj[key]);
+}
+console.log(entries);

@@ -73,11 +73,11 @@ js-basic
     git pull origin master
     git checkout tarasov
     git merge master
-
         или
-
     git checkout tarasov
     git merge origin master
+
+    git push origin tarasov 
 ```
 
 #### Ресурсы
