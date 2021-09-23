@@ -44,6 +44,7 @@ for (let i = 0; i <= 10; i++) {
   }
 }
 
+<<<<<<< HEAD
 console.log(sum);
 console.log(multi);
 
@@ -55,6 +56,35 @@ console.log(multi);
 // }
 // console.log(res);
 >>>>>>> ag-lesson-2
+=======
+//// 1
+for (let i = 0; i <= 10; i++) {
+  if (i % 2 === 0) {
+    console.log(i);
+  }
+
+  if (i % 2 !== 0) {
+    continue;
+  }
+  console.log(i);
+}
+
+//// 2
+let sum = 0;
+let multi = 1;
+
+for (let i = 0; i <= 10; i++) {
+  sum += i;
+
+  if (i > 0) {
+    multi *= i;
+  }
+}
+
+console.log(sum);
+console.log(multi);
+
+>>>>>>> origin
 /*
     1)
     Создайте массив с 10 уникальными числами
@@ -91,6 +121,9 @@ console.log(multi);
     Создать массив из элементов которые встречаются только один раз
 */
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> origin
 
 //// 1
 const arr = [];
@@ -138,6 +171,7 @@ for (let i = 0; i < someArr.length; i++) {
 }
 
 console.log(uniqNumbers);
+<<<<<<< HEAD
 =======
 // let arr = [1,2,3,1,2,3,5,4,6,7,3,2,1,2,3,5,3,3,1,2,3,4,1];
 // let arr2 = [];
@@ -177,3 +211,5 @@ console.log(uniqNumbers);
 // }
 // console.log(arr2);
 >>>>>>> ag-lesson-2
+=======
+>>>>>>> origin
