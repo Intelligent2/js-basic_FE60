@@ -53,9 +53,13 @@ const person = {
   },
 };
 
+
+
+
+
 // ПРИМЕР: Создать функцию showPersonInfo, должна возвращать строку вида 'Работает ROLE по адресу CITY, STREET'
 const defaultWorkInfoParams = {
-  role: "unknown",
+  role: "ad",
   address: {
     city: "London",
     street: "Somewhere",
