@@ -34,6 +34,15 @@ const duplicate = (array) => {
     Пример палиндромов: 'доход', 'шалаш'
 */
 
+const isPalindrome = function (string) {
+    for (let i = 0; i <(string.length-1)/2; i++) {
+        if (string[i] != string[string.length-1 - i]) {
+            return false
+        }
+    }
+    return true
+};
+
 /*
     Создайте массив с десятью случайными элементами от 0 до 100;
     Создать функцию с именем replacer, которая будет заменять все “0” на строку “zero”;
@@ -42,3 +51,14 @@ const duplicate = (array) => {
 
     * для рандомного числа используйте Math.floor(Math.random() * 100)
 */
+
+
+const arrays = [];
+while (arrays.length < 10) {
+  const randomNum = Math.floor(Math.random() * 100);
+  if (arrays.includes(randomNum)) {
+    continue;
+  }
+  arrays.push(randomNum);
+}
+console.log(arrays);
