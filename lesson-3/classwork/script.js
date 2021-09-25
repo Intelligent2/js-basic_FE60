@@ -14,7 +14,22 @@
         }
      return max;
 
+<<<<<<< HEAD
     }
+=======
+const getBiggest = (...nums) => {
+  let max = -Infinity;
+
+  for (let i = 0; i < nums.length; i++) {
+    if (nums[i] > max) {
+      max = nums[i];
+    }
+  }
+
+  return max;
+};
+
+>>>>>>> origin
 /*
     Создать функцию с именем duplicate
     Функция должна принимать массив
@@ -26,6 +41,11 @@
         return array;
     }
 
+
+const duplicate = (array) => {
+  array.push(...array);
+  return array;
+};
 
 /*
     Создать функцию с именем isPalindrome
