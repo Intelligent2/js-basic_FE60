@@ -58,15 +58,19 @@ console.log(arr);
 const replacer = function (array) {
     let newArr = [];
     for (let i = 0; i < array.length; i++) {
-      let str = array[i].toString();
-      let newStr = "";
-      for (let j = 0; j < str.length; j++) {
-        if (str[j] === "0") {
-          newStr += "zero"
-        }
-        else newStr+= str[j]
+      if (array[i].toString().includes("0")) {
+          let str = array[i].toString();
+          let newStr = "";
+          for (let j = 0; j < str.length; j++) {
+              if (str[j] === "0") {
+                  newStr += "zero"
+              }
+              else newStr+= str[j]
+          }
+          newArr.push(newStr)
       }
-      newArr.push(newStr)
+      else newArr.push(array[i])
+
     }
     return newArr
 };
