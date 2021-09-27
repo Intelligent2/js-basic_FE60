@@ -2,6 +2,9 @@
    Создать функцию с именем compact
    Функция должна очищать массив от значений: false, undefined, "", 0, null.
 */
+const compact = (array)=> array.filter(item=>!!item)
+// const compact = (array)=> array.filter(Boolean)
+
 
 /*
    Создать функцию с именем isAnagram
@@ -9,12 +12,32 @@
    isAnagram('xyz','zyx'); // true
    isAnagram('xyz','xyzx'); // false
 */
+const isAnagram = (str1,str2)=>{
+  if (str1.length !==str2.length) {
+    return false;
+  }
+ const sortString = (string)=>string.toLowerCase().split('').sort().join('');
+ return sortString(str1) === sortString(str2);
+  // console.log(str1.toLowerCase().sort() === str2.toLowerCase().sort()))
+}
+  
+
+
+
 
 /*  
     Создать функцию с именем fromStringToObj
     Функция должна примать строку и возвращать объект
     'a.b.c.d.e.f.g.h.i' => { a: { b: { c: { d: { e: { f: { g: { h: { i: {} } } } } } } } } };
 */
+const fromStringToObj = (str) => {
+  const obj = str.split('.').reduceRight((acc,cur)=> {
+return {
+  [cur]:acc,
+}
+  }, {});
+  return obj
+}
 
 /*
     Дан объект users
