@@ -3,10 +3,6 @@
    Функция должна очищать массив от значений: false, undefined, "", 0, null.
 */
 
-const compact = (array) => {
-  return array.filter(Boolean);
-};
-
 /*
    Создать функцию с именем isAnagram
    Написать код функции проверки анаграммы
