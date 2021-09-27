@@ -80,7 +80,7 @@ const showPersonInfo = (user, defaultParams) => {
   return `Работает ${role}, по адресу ${city}, ${street}`;
 };
 
-console.log(showPersonInfo(person, showPersonInfo));
+console.log(showPersonInfo(person, defaultWorkInfoParams));
 
 /*
     Создать объект user вида 
