@@ -11,91 +11,90 @@
 */
 
 const person = {
-  name: "Alice",
-  lastName: "Taylor",
+  name: 'Alice',
+  lastName: 'Taylor',
   age: 25,
   address: {
-    city: "Minsk",
-    street: "135 Pobediteley Avenue",
+    city: 'Minsk',
+    street: '135 Pobediteley Avenue',
   },
   familyTree: {
     father: {
-      name: "Nick",
-      lastName: "Cooper",
+      name: 'Nick',
+      lastName: 'Cooper',
       age: 58,
     },
     mother: {
-      name: "Ann",
-      lastName: "Cooper",
+      name: 'Ann',
+      lastName: 'Cooper',
       age: 50,
     },
     husband: {
-      name: "Tom",
-      lastName: "Taylor",
+      name: 'Tom',
+      lastName: 'Taylor',
     },
   },
   pets: [
     {
-      type: "dog",
-      name: "Bobik",
+      type: 'dog',
+      name: 'Bobik',
     },
     {
-      type: "cat",
-      name: "Barsik",
+      type: 'cat',
+      name: 'Barsik',
     },
   ],
   work: {
-    role: "Teacher",
+    role: 'Teacher',
     address: {
-      city: "Minsk",
-      street: "130 Pobediteley Avenue",
+      city: 'Minsk',
+      street: '130 Pobediteley Avenue',
     },
   },
-};
+}
 
 const defaultParams = {
-  name: "Joe",
-  lastName: "Black",
+  name: 'Joe',
+  lastName: 'Black',
   age: 29,
   address: {
-    city: "Barcelona",
-    street: "Calle de Comandante Che Gevara 1",
+    city: 'Barcelona',
+    street: 'Calle de Comandante Che Gevara 1',
   },
   familyTree: {
     father: {
-      name: "Barack",
-      lastName: "Obama",
+      name: 'Barack',
+      lastName: 'Obama',
       age: 42,
     },
     mother: {
-      name: "Eva",
-      lastName: "Elfi",
+      name: 'Eva',
+      lastName: 'Elfi',
       age: 18,
     },
     husband: {
-      name: "Lyudka",
-      lastName: "Taran",
+      name: 'Lyudka',
+      lastName: 'Taran',
     },
   },
   pets: [
     {
-      type: "dragon",
-      name: "Clarance",
+      type: 'dragon',
+      name: 'Clarance',
     },
     {
-      type: "unicorn",
-      name: "Nigel",
+      type: 'unicorn',
+      name: 'Nigel',
     },
   ],
   work: {
-    role: "Whore",
+    role: 'Whore',
     address: {
-      city: "Bobruisk",
-      street: "Sweet Honey Pea Blvd 69",
+      city: 'Bobruisk',
+      street: 'Sweet Honey Pea Blvd 69',
     },
   },
-};
-
+}
 
 function showPersonInfo(obj, defaults) {
   const {
@@ -105,7 +104,10 @@ function showPersonInfo(obj, defaults) {
     address: { city = defaults.address.city, street = defaults.address.street },
     work: {
       role = defaults.role,
-      address: { city: horad = defaults.work.address.city, street: vulica = defaults.work.address.street },
+      address: {
+        city: horad = defaults.work.address.city,
+        street: vulica = defaults.work.address.street,
+      },
     },
   } = obj
   return `${name} ${lastName}, возраст ${age}, проживает по адресу ${city}, ${street}. Работает ${role} по адресу ${
