@@ -24,6 +24,26 @@ describe("isAnagram", function () {
   });
 });
 
+describe("compact", function () {
+  const params = [
+    [
+      [1, 0, 2, null, undefined],
+      [1, 2],
+    ],
+    [[null, undefined, 0, "", false], []],
+    [
+      [1, 9, 3, "string", true, [], 99],
+      [1, 9, 3, "string", true, [], 99],
+    ],
+  ];
+
+  params.forEach(([input, output]) => {
+    it(`compact([${input}]) должен возвращать [${output}]`, function () {
+      assert.deepEqual(compact(input), output);
+    });
+  });
+});
+
 describe("fromStringToObj", function () {
   const params = [
     [
