@@ -77,6 +77,7 @@ js-basic
     git checkout tarasov
     git merge origin master
 
+    git commit -m "merge master in tarasov" 
     git push origin tarasov 
 ```
 
