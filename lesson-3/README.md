@@ -3,6 +3,7 @@
 
 1. [Область видимости переменных](#Scope)
 
+
 2. [Функции](#Fucntions)
 3. [Остаточные параметры, оператор расширения](#Rest)
 4. [Стрелочные функции](#Arrow)
@@ -202,12 +203,12 @@ console.log(hello) // ReferenceError: hello is not defined
     function updateUser(user){
         const userData = user || { name: "Some name", age: 18 };
         userData.password = generatePassword(user.name);
-        // Доступны переменные: person, user, userData, updateUser
+        // Доступны переменные: person, user, updateUser
 
         function generatePassword(userName){
             const newPassword = `${userName}!${Math.floor(Math.random() * 10000)}`;
 
-            // Доступны переменные: newPassword, userName, userData, user, person, updateUser
+            // Доступны переменные: newPassword, userName, userData, user, person.
             return newPassword;
         }
     }
@@ -283,7 +284,7 @@ console.log(hello) // ReferenceError: hello is not defined
     sumAllArgs(1,2,3,4,5,6,7,8,9) // 45
   ```
 
-**Оператор расширения**
+#### Оператор расширения
 
 Мы узнали, как получить массив из списка параметров c помозью *остаточного оператора*, но иногда нужно сделать в точности противоположное. Тут нам поможет оператор расширения. Он похож на остаточные параметры – тоже использует `...`, но делает совершенно противоположное.
 
