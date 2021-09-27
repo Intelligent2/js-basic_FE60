@@ -147,10 +147,7 @@ const showFamilyTree = (person, defaultParams) => {
 
 console.log(showFamilyTree(person, defaultParams));
 
-<<<<<<< HEAD
-=======
 console.log(showPersonInfo(person, defaultWorkInfoParams));
->>>>>>> master
 
 /*
     Создать объект user вида 
