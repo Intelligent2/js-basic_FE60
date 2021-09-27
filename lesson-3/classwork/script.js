@@ -4,14 +4,14 @@
     Функция должна уметь работать с разным количетвом параметров
 */
 const getBiggest = function (...args) {
-    let max = args[0];
-for (let i = 0; i<args.length; i++ ){
-    if (max<args[i]) {
-max = args[i]
-    }
-}
-return max;
-}
+	let max = args[0];
+	for (let i = 0; i < args.length; i++) {
+		if (max < args[i]) {
+			max = args[i];
+		}
+	}
+	return max;
+};
 
 // const getBiggest = (...nums) => {
 //   let max = -Infinity;
@@ -31,10 +31,10 @@ return max;
     Функция должна возратить удвоенный массив
     Пример: [1,2,3] => [1,2,3,1,2,3] 
 */
-const duplicate = function (args){
-args.push(...args);
-return args;
-}
+const duplicate = function (args) {
+	args.push(...args);
+	return args;
+};
 
 // const duplicate = (array) => {
 //   array.push(...array);
@@ -47,15 +47,14 @@ return args;
     Пример палиндромов: 'доход', 'шалаш'
 */
 const isPalindrome = function (word) {
-    let arr = word.split('').reverse().join('');
-    if (arr === word){
-        return true
-        } 
-        else {
-            return false
-        }
-    }
-    
+	let arr = word.split('').reverse().join('');
+	if (arr === word) {
+		return true;
+	} else {
+		return false;
+	}
+};
+
 /*
     Создайте массив с десятью случайными элементами от 0 до 100;
     Создать функцию с именем replacer, которая будет заменять все “0” на строку “zero”;
@@ -63,26 +62,36 @@ const isPalindrome = function (word) {
     Пример: [1zero2, 53, “2zero”, 18, 22, “1zerozero”, 43, 57, “5zero”, 1];
 
     * для рандомного числа используйте Math.floor(Math.random() * 100)
-*/ 
+*/
 let arr = [];
-for (i=0; i<10;i++){
-    let a = Math.floor(Math.random() * 100);
-    arr.push(a);
+for (i = 0; i < 10; i++) {
+	let a = Math.floor(Math.random() * 100);
+	arr.push(a);
 }
-const replacer = function (arr) {
-for (let g=0; g<arr.length; g++){
-// if (arr[g].split('').indexOf(0)!==-1) {
+function replacer(arr) {
+	for (let g = 0; g < 10; g++) {
+        if (arr[g]===100) {
+            arr[g]/=100;
+            arr[g]+='zerozero';
+        }
+        if (arr[g]===0){
+            arr[g]='zero';
+        }
+		if (arr[g] % 10 === 0) {
+			arr[g] /= 10;
+            arr[g]+='zero';
+        }
+		}
+        console.log(arr);
+    }
+    replacer(arr);
 
-// }
-// }
-// return arr
-// }
+		// let j = arr[g].split('').ingexOf(0)
+		// console.log()
+		// if (j==-1){
+		//     continue
+		// }else {
 
-let j = arr[g].split('').ingexOf(0)
-console.log()
-// if (j==-1){
-//     continue
-// }else {
-
+		// }
+// 	}
 // }
-}}

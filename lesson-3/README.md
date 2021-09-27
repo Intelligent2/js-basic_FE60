@@ -208,11 +208,7 @@ console.log(hello) // ReferenceError: hello is not defined
         function generatePassword(userName){
             const newPassword = `${userName}!${Math.floor(Math.random() * 10000)}`;
 
-<<<<<<< HEAD
-            // Доступны переменные: newPassword, userName, userData, user, person, newDate.
-=======
             // Доступны переменные: newPassword, userName, userData, user, person.
->>>>>>> origin
             return newPassword;
         }
     }
