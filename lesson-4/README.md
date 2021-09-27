@@ -443,7 +443,7 @@
  ### ДЗ
 
 1. [Объекты](https://learn.javascript.ru/object)
-2. [Копирование объектов и ссылки](learn.javascript.ru/object-copy)
+2. [Копирование объектов и ссылки](https://learn.javascript.ru/object-copy)
 3. [Методы объекта, "this"](https://learn.javascript.ru/object-methods)
 4. [Опциональная цепочка](https://learn.javascript.ru/optional-chaining)
 5. [Object.keys, values, entries](https://learn.javascript.ru/keys-values-entries)
