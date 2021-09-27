@@ -3,31 +3,15 @@
     Функция должна возвращать самое большое число из переданных параметров
     Функция должна уметь работать с разным количетвом параметров
 */
-<<<<<<< HEAD
 const getBiggest = (...args) => {
   return Math.max(a, b, ...args)
-  let max = -Infinity;
-  for ( let i = 0; i < args.length; i++ ) {
-    if ( args[i] > max) {
+  let max = -Infinity
+  for (let i = 0; i < args.length; i++) {
+    if (args[i] > max) {
       max = args[i]
     }
   }
 }
-=======
-
-const getBiggest = (...nums) => {
-  let max = -Infinity;
-
-  for (let i = 0; i < nums.length; i++) {
-    if (nums[i] > max) {
-      max = nums[i];
-    }
-  }
-
-  return max;
-};
-
->>>>>>> ml
 /*
     Создать функцию с именем duplicate
     Функция должна принимать массив
@@ -35,10 +19,9 @@ const getBiggest = (...nums) => {
     Пример: [1,2,3] => [1,2,3,1,2,3]
 */
 
-<<<<<<< HEAD
-const duplicate = (arr) => {
-  for ( let i = 0; i < arr.length; i++ ) {
-    arr.push(i);
+const duplicate = arr => {
+  for (let i = 0; i < arr.length; i++) {
+    arr.push(i)
   }
 }
 
@@ -46,19 +29,12 @@ const duplicate = (arr) => {
 //   arr.push(...arr);
 //   return arr;
 // }
-=======
-const duplicate = (array) => {
-  array.push(...array);
-  return array;
-};
-
->>>>>>> ml
 /*
     Создать функцию с именем isPalindrome
     Проверить является ли строка палиндромом
     Пример палиндромов: 'доход', 'шалаш'
 */
-const isPalindrome = (str) => str === str.split('').reverse().join('');
+const isPalindrome = str => str === str.split('').reverse().join('')
 
 //use WHILE LOOP
 /*
@@ -69,4 +45,3 @@ const isPalindrome = (str) => str === str.split('').reverse().join('');
 
     * для рандомного числа используйте Math.floor(Math.random() * 100)
 */
-
