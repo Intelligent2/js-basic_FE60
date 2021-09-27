@@ -18,8 +18,6 @@
 //     sum += i;  
 // }
 // console.log(sum);
-
-<<<<<<< HEAD
 //// 1
 for (let i = 0; i <= 10; i++) {
   if (i % 2 === 0) {
@@ -44,19 +42,16 @@ for (let i = 0; i <= 10; i++) {
   }
 }
 
-<<<<<<< HEAD
 console.log(sum);
 console.log(multi);
 
-=======
 // let res = 1;
 // for(let i = 1; i <= 10; i++) 
 // {
 //     res *= i;  
 // }
 // console.log(res);
->>>>>>> ag-lesson-2
-=======
+
 //// 1
 for (let i = 0; i <= 10; i++) {
   if (i % 2 === 0) {
@@ -83,8 +78,6 @@ for (let i = 0; i <= 10; i++) {
 
 console.log(sum);
 console.log(multi);
-
->>>>>>> origin
 /*
     1)
     Создайте массив с 10 уникальными числами
@@ -120,11 +113,6 @@ console.log(multi);
     Дан массив [1,2,3,1,2,3,5,4,6,7,3,2,1,2,3,5,3,3,1,2,3,4,1]
     Создать массив из элементов которые встречаются только один раз
 */
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> origin
-
 //// 1
 const arr = [];
 
@@ -171,45 +159,3 @@ for (let i = 0; i < someArr.length; i++) {
 }
 
 console.log(uniqNumbers);
-<<<<<<< HEAD
-=======
-// let arr = [1,2,3,1,2,3,5,4,6,7,3,2,1,2,3,5,3,3,1,2,3,4,1];
-// let arr2 = [];
-// for (let i=0;i<arr.length;i++){
-//     let k = arr.shift();
-//     if (arr.includes(k)){
-//         continue
-//     }else{
-//         arr2.push(k);
-//     }
-// }
-// console.log(arr2);
-
-//ВОТ ОТВЕТ)
-// let arr = [1,2,3,1,2,3,5,4,6,7,3,2,1,2,3,5,3,3,1,2,3,4,1];
-// let arr2 = [];
-
-// for (let k=0;k<arr.length;k++){
-//     let i = arr.shift();
-// if (arr.includes(i)){
-// arr.push(i);
-// } else{
-//     arr2.push(i)&&arr.push(i);
-// }
-// }
-// console.log(arr2);
-
-
-// while(arr.length>0) {
-// let i =arr.pop()
-// if (arr.includes(i)){
-// continue
-// }
-// else {
-//     arr2.push(i);
-// }
-// }
-// console.log(arr2);
->>>>>>> ag-lesson-2
-=======
->>>>>>> origin
