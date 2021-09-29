@@ -63,20 +63,27 @@ const users = {
 		);
 	},
 	filterById(id) {
-		this.list.splice(
-			this.list.findIndex((item) => item.id === id),
-			1
-		);
+    if(this.list.findIndex((item) => item.id === id) != -1)
+    {
+        this.list.splice(
+        this.list.findIndex((item) => item.id === id),
+        1
+      );
+    }
 		return this.list;
 	},
 
 	filterByName(name) {
+    if(this.list.findIndex((item) => item.name === name) != -1)
+    {
     this.list.splice(
 			this.list.findIndex((item) => item.name.toLocaleLowerCase() === name.toLowerCase()),
 			1
 		);
+    }
 		return this.list;
   },
+  
 	getAllNames() {
 		return this.list.map((item) => item.name);
 	},
