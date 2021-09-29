@@ -68,30 +68,21 @@ for (i = 0; i < 10; i++) {
 	let a = Math.floor(Math.random() * 100);
 	arr.push(a);
 }
+
 function replacer(arr) {
 	for (let g = 0; g < 10; g++) {
-        if (arr[g]===100) {
-            arr[g]/=100;
-            arr[g]+='zerozero';
-        }
-        if (arr[g]===0){
-            arr[g]='zero';
-        }
+		if (arr[g] === 100) {
+			arr[g] /= 100;
+			arr[g] += 'zerozero';
+		}
+		if (arr[g] === 0) {
+			arr[g] = 'zero';
+		}
 		if (arr[g] % 10 === 0) {
 			arr[g] /= 10;
-            arr[g]+='zero';
-        }
+			arr[g] += 'zero';
 		}
-        console.log(arr);
-    }
-    replacer(arr);
-
-		// let j = arr[g].split('').ingexOf(0)
-		// console.log()
-		// if (j==-1){
-		//     continue
-		// }else {
-
-		// }
-// 	}
-// }
+	}
+	console.log(arr);
+}
+replacer(arr);
