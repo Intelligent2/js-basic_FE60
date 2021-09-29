@@ -66,10 +66,22 @@ const users = {
     { id: 2, name: "Victor" },
     { id: 3, name: "Kate" },
   ],
-  findById(id) {},
-  findByName(name) {},
-  filterById(id) {},
-  filterByName(name) {},
-  getAllNames() {},
-  getAllIds() {},
+  findById(id) {
+      return this.list.find((item) => item.id === id)
+  },
+  findByName(name) {
+      return this.list.find((item) => item.name.toLowerCase() === name.toLowerCase())
+  },
+  filterById(id) {
+     this.list = this.list.filter((item) => item.id != id)
+  },
+  filterByName(name) {
+    this.list = this.list.filter((user) => user.name.toLowerCase() != name.toLowerCase())
+  },
+  getAllNames() {
+    return this.list.map((user) => user.name)
+  },
+  getAllIds() {
+    return this.list.map(user => user.id)
+  },
 };
