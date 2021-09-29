@@ -208,6 +208,7 @@ console.log(hello) // ReferenceError: hello is not defined
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             // Доступны переменные: newPassword, userName, userData, user, person, newDate.
 =======
             // Доступны переменные: newPassword, userName, userData, user, person.
@@ -215,6 +216,9 @@ console.log(hello) // ReferenceError: hello is not defined
 =======
             // Доступны переменные: newPassword, userName, userData, user, person, updateUser
 >>>>>>> origin
+=======
+            // Доступны переменные: newPassword, userName, userData, user, person.
+>>>>>>> ag-lesson-4
             return newPassword;
         }
     }
