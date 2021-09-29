@@ -83,7 +83,7 @@ const users = {
     }
 		return this.list;
   },
-  
+
 	getAllNames() {
 		return this.list.map((item) => item.name);
 	},
