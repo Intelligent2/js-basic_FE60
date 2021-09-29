@@ -33,7 +33,15 @@ const duplicate = (array) => {
     Проверить является ли строка палиндромом
     Пример палиндромов: 'доход', 'шалаш'
 */
-
+// const isPalindrome = (str) => str.split("").reverse().join("")===str;
+const isPalindrome = function (str) {
+    for (let i = 0; i<(str.length-1)/2; i++) {
+      if (str[i] != str[str.length-1 -i]) {
+        return false
+      }
+    }
+    return true
+};
 /*
     Создайте массив с десятью случайными элементами от 0 до 100;
     Создать функцию с именем replacer, которая будет заменять все “0” на строку “zero”;
@@ -42,3 +50,27 @@ const duplicate = (array) => {
 
     * для рандомного числа используйте Math.floor(Math.random() * 100)
 */
+let arr = [];
+for (let i = 0; i < 10; i++){
+  arr.push(Math.floor(Math.random() * 100))
+}
+console.log(arr);
+const replacer = function (array) {
+    let newArr = [];
+    for (let i = 0; i < array.length; i++) {
+      if (array[i].toString().includes("0")) {
+          let str = array[i].toString();
+          let newStr = "";
+          for (let j = 0; j < str.length; j++) {
+              if (str[j] === "0") {
+                  newStr += "zero"
+              }
+              else newStr+= str[j]
+          }
+          newArr.push(newStr)
+      }
+      else newArr.push(array[i])
+
+    }
+    return newArr
+};
