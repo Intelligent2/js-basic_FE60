@@ -2,9 +2,8 @@
    Создать функцию с именем compact
    Функция должна очищать массив от значений: false, undefined, "", 0, null.
 */
-const compact = (array)=> array.filter(item=>!!item)
+const compact = (array) => array.filter((item) => !!item);
 // const compact = (array)=> array.filter(Boolean)
-
 
 /*
    Создать функцию с именем isAnagram
@@ -12,18 +11,14 @@ const compact = (array)=> array.filter(item=>!!item)
    isAnagram('xyz','zyx'); // true
    isAnagram('xyz','xyzx'); // false
 */
-const isAnagram = (str1,str2)=>{
-  if (str1.length !==str2.length) {
-    return false;
-  }
- const sortString = (string)=>string.toLowerCase().split('').sort().join('');
- return sortString(str1) === sortString(str2);
-  // console.log(str1.toLowerCase().sort() === str2.toLowerCase().sort()))
-}
-  
-
-
-
+const isAnagram = (str1, str2) => {
+	if (str1.length !== str2.length) {
+		return false;
+	}
+	const sortString = (string) => string.toLowerCase().split('').sort().join('');
+	return sortString(str1) === sortString(str2);
+	// console.log(str1.toLowerCase().sort() === str2.toLowerCase().sort()))
+};
 
 /*  
     Создать функцию с именем fromStringToObj
@@ -31,13 +26,13 @@ const isAnagram = (str1,str2)=>{
     'a.b.c.d.e.f.g.h.i' => { a: { b: { c: { d: { e: { f: { g: { h: { i: {} } } } } } } } } };
 */
 const fromStringToObj = (str) => {
-  const obj = str.split('.').reduceRight((acc,cur)=> {
-return {
-  [cur]:acc,
-}
-  }, {});
-  return obj
-}
+	const obj = str.split('.').reduceRight((acc, cur) => {
+		return {
+			[cur]: acc,
+		};
+	}, {});
+	return obj;
+};
 
 /*
     Дан объект users
@@ -53,16 +48,39 @@ return {
 */
 
 const users = {
-  list: [
-    { id: 0, name: "Vlad" },
-    { id: 1, name: "Vova" },
-    { id: 2, name: "Victor" },
-    { id: 3, name: "Kate" },
-  ],
-  findById(id) {},
-  findByName(name) {},
-  filterById(id) {},
-  filterByName(name) {},
-  getAllNames() {},
-  getAllIds() {},
+	list: [
+		{ id: 0, name: 'Vlad' },
+		{ id: 1, name: 'Vova' },
+		{ id: 2, name: 'Victor' },
+		{ id: 3, name: 'Kate' },
+	],
+	findById(id) {
+		return this.list.find((item) => item.id === id);
+	},
+	findByName(name) {
+		return this.list.find(
+			(item) => item.name.toLocaleLowerCase() === name.toLocaleLowerCase()
+		);
+	},
+	filterById(id) {
+		this.list.splice(
+			this.list.findIndex((item) => item.id === id),
+			1
+		);
+		return this.list;
+	},
+
+	filterByName(name) {
+    this.list.splice(
+			this.list.findIndex((item) => item.name.toLocaleLowerCase() === name.toLowerCase()),
+			1
+		);
+		return this.list;
+  },
+	getAllNames() {
+		return this.list.map((item) => item.name);
+	},
+	getAllIds() {
+		return this.list.map((item) => item.id);
+	},
 };
