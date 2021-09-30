@@ -3,8 +3,6 @@
    Функция должна очищать массив от значений: false, undefined, "", 0, null.
 */
 
-const compact = 
-
 /*
    Создать функцию с именем isAnagram
    Написать код функции проверки анаграммы
@@ -45,3 +43,7 @@ const users = {
   getAllNames() {},
   getAllIds() {},
 };
+const findById = users.list.id.find((item) => item === id);
+  console.log(findById); 
+const findByName = users.list.name.find((item) => item === name);
+  console.log(findByName); 
